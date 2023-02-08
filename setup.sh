@@ -1,12 +1,12 @@
 echo "Creating DotEnv SymLinks"
 
-cp -r . /tmp/dotenv_tmp
-rm -r -f ~/.config/dotenv
-mv /tmp/dotenv_tmp ~/.config/dotenv
+cp -r . /tmp/dotfiles_tmp
+rm -r -f ~/.config/dotfiles
+mv /tmp/dotfiles_tmp ~/.config/dotfiles
 
 
 rm -rf ~/.config/nvim
-ln -s ~/.config/dotenv/nvim ~/.config
+ln -s ~/.config/dotfiles/nvim ~/.config
 
 rm -f ~/.config/starship.toml
-ln -s ~/.config/dotenv/starship.toml ~/.config
+ln -s ~/.config/dotfiles/starship.toml ~/.config

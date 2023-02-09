@@ -38,6 +38,10 @@ require('packer').startup(function(use)
     end,
   }
 
+  use { -- -Autocomplete parentheses
+    'kien/rainbow_parentheses.vim',
+  }
+
   use { -- Additional text objects via treesitter
     'nvim-treesitter/nvim-treesitter-textobjects',
     after = 'nvim-treesitter',

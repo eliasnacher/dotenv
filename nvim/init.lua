@@ -112,11 +112,11 @@ require('lazy').setup({
     },
   },
 
-  { -- Theme inspired by Atom
-    'navarasu/onedark.nvim',
+  { -- Theme inspired by Code Github Theme
+    'projekt0n/github-nvim-theme',
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'onedark'
+      vim.cmd.colorscheme 'github_dark_colorblind'
     end,
   },
 
@@ -126,7 +126,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'onedark',
+        theme = 'github_dark_colorblind',
         component_separators = '|',
         section_separators = '',
       },

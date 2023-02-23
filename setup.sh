@@ -11,5 +11,5 @@ ln -s ~/.config/dotfiles/nvim ~/.config
 rm -f ~/.config/starship.toml
 ln -s ~/.config/dotfiles/starship.toml ~/.config
 
-rm -f ~/.config/terminator
-ln -s ~/.config/dotfiles/terminator ~/.config
+rm -f ~/.config/tmux
+ln -s ~/.config/dotfiles/tmux ~/.config

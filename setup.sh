@@ -13,3 +13,6 @@ ln -s ~/.config/dotfiles/starship.toml ~/.config
 
 rm -f ~/.tmux.conf
 ln -s ~/.config/dotfiles/.tmux.conf ~/
+
+rm -f ~/.zshrc
+ln -s ~/.config/dotfiles/.zshrc ~/

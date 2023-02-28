@@ -1,5 +1,18 @@
 echo "Creating DotEnv SymLinks"
 
+if ! command -v <nvim> &> /dev/null
+then
+    sudo apt install nvim
+fi
+if ! command -v <zsh> &> /dev/null
+then
+    sudo apt install zsh
+fi
+if ! command -v <startship> &> /dev/null
+then
+    curl -sS https://starship.rs/install.sh | sh
+fi
+
 cp -r . /tmp/dotfiles_tmp
 rm -r -f ~/.config/dotfiles
 mv /tmp/dotfiles_tmp ~/.config/dotfiles

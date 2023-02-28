@@ -112,11 +112,11 @@ require('lazy').setup({
     },
   },
 
-  { -- Theme inspired by Code Github Theme
-    'projekt0n/github-nvim-theme',
+  { -- Custom Theme
+    'folke/tokyonight.nvim',
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'github_dark_colorblind'
+      vim.cmd.colorscheme 'tokyonight-night'
     end,
   },
 
@@ -126,7 +126,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'github_dark_colorblind',
+        theme = 'tokyonight',
         component_separators = '|',
         section_separators = '',
       },

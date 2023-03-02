@@ -1,6 +1,6 @@
 # Aliases
 alias nv="nvim"
-alias ga="git add ."
+alias ga="git add"
 alias gd="git diff"
 alias gc="git commit --no-verify"
 alias gca="git commit --amend --no-edit --no-verify"

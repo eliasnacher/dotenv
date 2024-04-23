@@ -8,8 +8,9 @@ alias gcap="git commit --amend --no-edit --no-verify; git push --force"
 alias gp="git push"
 alias gpf="git push --force"
 alias grh="git reset --hard"
-alias ms="make up-dev service=\"lms-api-web lms-api-commandworker lms-api-eventworker engine-api-web engine-api-workercloud engine-api-workerplay engine-api-queueworker training-api-web training-api-workercloud training-api-workerplay training-api-workercheckvalidation playlist-api-web playlist-api-eventworker playlist-api-commandworker\""
+alias ms="make up-dev service=\"lms-api* engine-api* training-api* playlist-api* lms-learner-spa-* lms-admin-spa-*\""
 alias mc="make down-clean-dev"
+alias mt="f() { echo make phpcs-strict target_branch=origin/lms-common-api/release/$1};f"
 
 #Init starship
 eval "$(starship init zsh)"

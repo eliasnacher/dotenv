@@ -22,3 +22,4 @@ if [ "$TMUX" = "" ]; then tmux; exit; fi
 HOME=${HOME:-'/home/eliasnacher'}
 export PATH="$HOME/"'.platformsh/bin':"$PATH"
 if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/shell-config.rc'; fi # END SNIPPET
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"

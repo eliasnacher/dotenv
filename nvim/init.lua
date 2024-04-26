@@ -31,6 +31,13 @@ PlugPackages({
 	{
 		'vim-airline/vim-airline-themes'
 	}
+    },
+    {
+	'hrsh7th/nvim-cmp',
+	{
+		'hrsh7th/cmp-nvim-lsp',
+		'hrsh7th/cmp-buffer'
+	}
     }
 })
 
@@ -114,6 +121,13 @@ require("catppuccin").setup({
         },
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
     },
+})
+
+require('cmp').setup({
+  sources = {
+    { name = 'nvim_lsp' },
+    { name = 'buffer' }
+  }
 })
 
 -- setup must be called before loading

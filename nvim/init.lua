@@ -38,6 +38,12 @@ PlugPackages({
 		'hrsh7th/cmp-nvim-lsp',
 		'hrsh7th/cmp-buffer'
 	}
+    },
+    {
+	'rhysd/git-messenger.vim'
+    },
+    {
+	'mhinz/vim-signify'
     }
 })
 
@@ -47,10 +53,12 @@ vim.g.maplocalleader = ' '
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+vim.cmd('set number')
+
 require('neo-tree').setup({
     window = {
       position = "right",
-      width = 40
+      width = 100
     }
 })
 
@@ -137,3 +145,10 @@ vim.g.airline_theme = 'google_dark'
 kb = KeyBind
 
 kb('<leader>b', ':Neotree toggle=true<CR>', 'Toggle NeoTree Browser')
+kb('gd', '<cmd>lua vim.lsp.buf.definition()<CR>', 'Go to a Class/Function deffinition')
+kb('bl', ':ls<CR>', 'List Buffers')
+kb('bd', ':bd<CR>', 'Delete current Buffer')
+kb('bb', ':bprev<CR>', 'Move to previous Buffer')
+kb('bn', ':bnext<CR>', 'Move to next Buffer')
+kb('bm', ':buffer ', 'Move to a specific Buffer')
+kb('gm', ':GitMessenger<Cr>', 'Show last commit information about current line')
